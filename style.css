@@ -140,12 +140,26 @@ p {
   width: calc(100% - 420px); /*takes up the remaining width that appeared*/
 }
 .home{
-  background-color: rgb(255, 132, 0);
-  width: auto;
+  background-image: url('/images/homebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: flex-start;/*aligns horizontalyy at start*/
+  align-items: flex-end;/*aligns vertically at the bottom*/
+}
+.home .box{
+  background-color: rgba(0,0,0,0.5);
+  padding:30px 50px;
+  border-radius: 20px;
+  width: 300px;
+  margin-bottom: 30px;
+  margin-left: 10px;
 }
 .home h2{
   color: white;
-
 }
 .right .typing{
   overflow: hidden;
@@ -188,4 +202,10 @@ p {
 }
 .footer{
   background-color: #000;
+}
+.footer p{
+  margin-left: 390px;
+}
+span{
+  color: #0ff;
 }
