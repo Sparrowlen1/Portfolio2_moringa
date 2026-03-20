@@ -23,8 +23,6 @@ body {
   background-color: #040b14;
   margin: 0px;
   flex-direction: column;
-  flex: 1;
-  position:fixed;
 }
 .logo {
   margin-left: 10px;
@@ -32,9 +30,11 @@ body {
 .logo h1,
 p {
   color: whitesmoke;
+  margin: 0px 20px;
 }
 .btn1 {
   display: inline-block;
+  margin-left: 80px;
   margin-bottom: 10px;
   background: #0ff;
   color: #000;
@@ -52,9 +52,13 @@ p {
   border-bottom-left-radius: 50%;
   width: 200px;
   height: 200px;
+  margin-left: 90px;
 }
-.left h1 {
+.left p {
   color: white;
+  margin: 0px 50px;
+  font-weight: bold;
+  font-size: 40px;
 }
 .logos {
   border: 2px solid white;
@@ -62,12 +66,12 @@ p {
   width: 200px;
   height: 40px;
   border-radius: 20px;
+  margin: 0px 100px;
 }
 .logos i {
   color: white;
   font-size: 21px;
-  transition:
-    color 0.3s,
+  transition:color 0.3s,
     transform 0.3s;
   cursor: pointer;
   justify-content: space-between;
@@ -83,6 +87,7 @@ p {
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin: 20px 0px;
 }
 .links .nav li {
   display: flex;
@@ -117,7 +122,7 @@ p {
   border-radius: 50%;
   text-decoration: none;
 }
-.right{
+.right {
   flex: 3;
   margin: 20px;
 }
