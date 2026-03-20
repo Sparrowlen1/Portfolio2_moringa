@@ -13,16 +13,18 @@ body {
   font-size: 20px;
 }
 .container {
-  max-width: 1200px;
+  max-width: fit-content;
   margin: 0px;
   padding: 0px;
   display: flex;
 }
 .left {
-  display: flex;
   background-color: #040b14;
   margin: 0px;
   flex-direction: column;
+  position: fixed;
+  overflow-y: auto;
+  height: 100vh;
 }
 .logo {
   margin-left: 10px;
@@ -99,6 +101,17 @@ p {
     color 0.3s,
     color 0.3s;
 }
+.links .nav li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;          
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
 .links .nav li i {
   color: yellow;
   font-size: 20px;
@@ -123,6 +136,34 @@ p {
   text-decoration: none;
 }
 .right {
-  flex: 3;
-  margin: 20px;
+  margin-left: 420px;
+}
+.home{
+  background-color: rgb(255, 132, 0);
+  margin-right: 0px;
+}
+.home h2{
+  color: white;
+
+}
+.right .typing{
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #0ff;
+  width:0;
+  height: 30px;
+  animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19ch;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
