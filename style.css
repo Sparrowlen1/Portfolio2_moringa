@@ -13,10 +13,10 @@ body {
   font-size: 20px;
 }
 .container {
-  max-width: fit-content;
   margin: 0px;
   padding: 0px;
   display: flex;
+  width: auto;
 }
 .left {
   background-color: #040b14;
@@ -137,10 +137,11 @@ p {
 }
 .right {
   margin-left: 420px;
+  width: calc(100% - 420px); /*takes up the remaining width that appeared*/
 }
 .home{
   background-color: rgb(255, 132, 0);
-  margin-right: 0px;
+  width: auto;
 }
 .home h2{
   color: white;
@@ -166,4 +167,25 @@ p {
   50% {
     border-color: transparent;
   }
+}
+.about{
+  background-color: bisque;
+}
+.about p{
+  color: black;
+}
+.education{
+  background-color: rgb(84, 53, 8);
+}
+.skills{
+  background-color: cadetblue;
+}
+.projects{
+  background-color: chocolate;
+}
+.contact{
+  background-color: aquamarine;
+}
+.footer{
+  background-color: #000;
 }
