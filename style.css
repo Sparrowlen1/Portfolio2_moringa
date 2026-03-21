@@ -430,3 +430,9 @@ p {
   flex-direction: column;
   gap: 15px;
 }
+.form input, .form select, .form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
