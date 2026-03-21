@@ -8,6 +8,7 @@
 html,
 body {
   scroll-behavior: smooth;
+  /*scroll-snap-type: y mandatory;*/
   line-height: 1.6;
   font-size: 20px;
 }
@@ -147,6 +148,11 @@ p {
 .right {
   margin-left: 420px;
   width: calc(100% - 420px); /*takes up the remaining width that appeared*/
+}
+.right > div{
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
 }
 .home {
   /*background-image: url('/images/homebg.jpg');*/
