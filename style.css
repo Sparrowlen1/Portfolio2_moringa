@@ -8,7 +8,6 @@
 html,
 body {
   scroll-behavior: smooth;
-  min-height: 100vh;
   line-height: 1.6;
   font-size: 20px;
 }
@@ -17,6 +16,7 @@ body {
   padding: 0px;
   display: flex;
   width: auto;
+  min-height: 100vh;
 }
 .left {
   background-color: #040b14;
@@ -57,11 +57,11 @@ p {
   height: 200px;
   margin-left: 90px;
 }
-.pic img{
+.pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display:block;
+  display: block;
   border-radius: 50%;
 }
 .left p {
@@ -81,7 +81,8 @@ p {
 .logos i {
   color: white;
   font-size: 21px;
-  transition:color 0.3s,
+  transition:
+    color 0.3s,
     transform 0.3s;
   cursor: pointer;
   justify-content: space-between;
@@ -112,7 +113,7 @@ p {
 .links .nav li a {
   display: flex;
   align-items: center;
-  gap: 10px;          
+  gap: 10px;
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -147,7 +148,7 @@ p {
   margin-left: 420px;
   width: calc(100% - 420px); /*takes up the remaining width that appeared*/
 }
-.home{
+.home {
   /*background-image: url('/images/homebg.jpg');*/
   background-size: cover;
   background-position: center;
@@ -155,12 +156,12 @@ p {
   width: 100%;
   min-height: 400px;
   display: flex;
-  justify-content: flex-start;/*aligns horizontalyy at start*/
-  align-items: flex-end;/*aligns vertically at the bottom*/
+  justify-content: flex-start; /*aligns horizontalyy at start*/
+  align-items: flex-end; /*aligns vertically at the bottom*/
 }
-.home .box{
-  background-color: rgba(0,0,0,0.9);
-  padding:30px 50px;
+.home .box {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 30px 50px;
   border-radius: 20px;
   width: 300px;
   margin-bottom: 30px;
@@ -172,19 +173,21 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  z-index: -1;       
+  object-fit: cover;
+  z-index: -1;
 }
-.home h2{
+.home h2 {
   color: white;
 }
-.right .typing{
+.right .typing {
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #0ff;
-  width:0;
+  width: 0;
   height: 30px;
-  animation: typing 4s steps(30, end) infinite, blink 0.7s infinite;
+  animation:
+    typing 4s steps(30, end) infinite,
+    blink 0.7s infinite;
 }
 @keyframes typing {
   from {
@@ -199,66 +202,145 @@ p {
     border-color: transparent;
   }
 }
-.about{
+.about {
   background-color: bisque;
 }
-.about p{
+.about p {
   color: black;
 }
-.education{
+.education {
   background-color: rgb(84, 53, 8);
 }
-.skills{
-  background-color: cadetblue;
-}
-.projects{
+.projects {
   background-color: chocolate;
 }
-.contact{
+.contact {
   background-color: aquamarine;
 }
-.footer{
+.footer {
   background-color: #000;
 }
-.footer p{
+.footer p {
   margin-left: 390px;
 }
-span{
+span {
   color: #0ff;
 }
-.about{
+.about {
   height: fit-content;
   background-color: antiquewhite;
 }
-.content{
+.about h2 {
+  margin-left: 20px;
+}
+.content {
   display: flex;
 }
-.content img{
+.content img {
   width: 50%;
   height: 100%;
   object-fit: cover;
   border-radius: 50px;
   margin: 20px;
 }
-.content h2{
+.content h2 {
   margin: 20px;
   font-weight: bolder;
 }
-.content2 ul{
+.content2 ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px 30px;
-  list-style: disc;
-  padding: 0;
+  gap: 20px 20px;
+  padding: 10px;
+  list-style: none;
   margin-top: 15px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
 }
-.content2 ul li{
-  color: rgb(51, 5, 5);
-  font-size: 14px;
-}
-.content2 ul li i{
-  color: rgb(98, 98, 8);
+.content2 ul li {
+  color: rgb(0, 0, 0);
   font-size: 20px;
+  font-weight: bold;
+}
+.content2 ul li a{
+  text-decoration: none;
+  color: #0ff;
+}
+.content2 ul li a:hover{
+  color: #e68900;
+}
+.content2 ul li i {
+  color: rgb(249, 249, 28);
+  font-size: 15px;
+}
+.education {
+  background-color: bisque;
+  padding: 60px 40px;
+}
+.education h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.education .edbox {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 50px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 30px 150px;
+}
+.btn {
+  background-color: #0ff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  background-color: #e68900;
+}
+.skills{
+  padding: 20px 40px;
+  background-color: rgb(210, 221, 221);
+}
+.skills h2 {
+  margin-left: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.skills p{
+  margin-left: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.skills .colbox{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+.skills p{
+  color: #000;
+  font-weight: bolder;
+}
+.colbox p{
+  font-weight: bolder;
+}
+.colbox i{
+  color: yellow;
 }
