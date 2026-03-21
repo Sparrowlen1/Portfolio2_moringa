@@ -170,8 +170,8 @@ p {
   padding: 30px 50px;
   border-radius: 20px;
   width: 300px;
-  margin-bottom: 30px;
-  margin-left: 10px;
+  margin-bottom: 300px;
+  margin-left: 400px;
 }
 .bg-video {
   position: absolute;
@@ -216,21 +216,6 @@ p {
 }
 .education {
   background-color: rgb(84, 53, 8);
-}
-.projects {
-  background-color: chocolate;
-}
-.contact {
-  background-color: aquamarine;
-}
-.footer {
-  background-color: #000;
-}
-.footer p {
-  margin-left: 390px;
-}
-span {
-  color: #0ff;
 }
 .about {
   height: fit-content;
@@ -349,4 +334,94 @@ span {
 }
 .colbox i{
   color: yellow;
+}
+.projects{
+  padding: 60px;
+  background: #0f172a;
+  color: #fff;
+}
+.projects h2{
+  font-size: 40px;
+  font-weight: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.projects p{
+  margin-bottom: 10px;
+  color: #ccc;
+  text-align: center;
+}
+.projbox{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.projbox > div {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.projbox img {
+  width: 100%;
+  height: 150px;
+  background: #333; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.projbox p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.projbox a {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #38bdf8;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.projbox > div:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: #334155;
+}
+.projbox a:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+.contact{
+  padding: 60px;
+  background: #020617;
+  color: #fff;
+}
+.contactbox{
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+.location{
+  flex: 1;
+}
+.location ul {
+  list-style: none;
+}
+.location li{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.location i{
+  margin-right: 10px;
+  color: yellow;
+}
+.location iframe{
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+.form{
+  flex: 1;
 }
