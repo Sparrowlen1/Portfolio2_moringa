@@ -393,6 +393,15 @@ p {
   background: #0ea5e9;
   color: #fff;
 }
+.contact h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.contact p{
+  text-align: center;
+  font-weight: bold;
+}
 .contact{
   padding: 60px;
   background: #020617;
@@ -411,7 +420,8 @@ p {
 }
 .location li{
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .location i{
   margin-right: 10px;
@@ -435,4 +445,19 @@ p {
   border: none;
   border-radius: 8px;
   outline: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form button{
+  padding: 12px;
+  background: #0ff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form button:hover{
+  background: #e68900;
+  color: #fff;
 }
