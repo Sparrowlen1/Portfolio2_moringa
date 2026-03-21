@@ -461,3 +461,17 @@ p {
   background: #e68900;
   color: #fff;
 }
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #2f2d2d;
+  color: #aaa;
+}
+
+.footer a{
+  color: #0ff;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #e68900;
+}
