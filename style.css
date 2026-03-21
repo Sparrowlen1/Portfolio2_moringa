@@ -24,7 +24,8 @@ body {
   margin: 0px;
   flex-direction: column;
   position: fixed;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
   height: 100vh;
 }
 .logo {
@@ -474,4 +475,55 @@ p {
 }
 .footer a:hover{
   color: #e68900;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 900px) {
+  .left {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .right {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .right > div {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 900px) {
+  .projbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projbox {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .contactbox {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .links {
+    display: none; /*inahide menu*/
+  }
 }
