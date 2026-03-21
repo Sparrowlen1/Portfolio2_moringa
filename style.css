@@ -20,13 +20,17 @@ body {
   min-height: 100vh;
 }
 .left {
-  background-color: #040b14;
+  background-color: #16181b;
   margin: 0px;
+  display: flex;
   flex-direction: column;
   position: fixed;
   overflow-y: scroll;
   scrollbar-width: none;
   height: 100vh;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 420px;
 }
 .logo {
   margin-left: 10px;
@@ -125,7 +129,7 @@ p {
 }
 .links .nav li i {
   color: yellow;
-  font-size: 20px;
+  font-size: 15px;
   transition: transform 0.3s;
 }
 .links .nav li:hover i {
@@ -302,7 +306,7 @@ p {
 }
 .skills{
   padding: 20px 40px;
-  background-color: rgb(210, 221, 221);
+  background-color: antiquewhite;
 }
 .skills h2 {
   margin-left: 20px;
@@ -338,8 +342,8 @@ p {
 }
 .projects{
   padding: 60px;
-  background: #0f172a;
-  color: #fff;
+  background: bisque;
+  color: #000000;
 }
 .projects h2{
   font-size: 40px;
@@ -349,7 +353,7 @@ p {
 }
 .projects p{
   margin-bottom: 10px;
-  color: #ccc;
+  color: #000000;
   text-align: center;
 }
 .projbox{
@@ -359,12 +363,12 @@ p {
   gap: 25px;
 }
 .projbox > div {
-  background: #1e293b;
+  background: #818386;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
   transition: all 0.4s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.9);
 }
 .projbox img {
   width: 100%;
@@ -398,14 +402,16 @@ p {
   text-align: center;
   font-weight: bold;
   font-size: 40px;
+  color: #000;
 }
 .contact p{
   text-align: center;
   font-weight: bold;
+  color: #000;
 }
 .contact{
   padding: 60px;
-  background: #020617;
+  background: antiquewhite;
   color: #fff;
 }
 .contactbox{
@@ -423,6 +429,7 @@ p {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
+  color: #000;
 }
 .location i{
   margin-right: 10px;
