@@ -518,7 +518,7 @@ img {
   height: auto;
 }
 @media (max-width: 900px) {
-  /* Prevent horizontal scroll */
+
   html, body {
     overflow-x: hidden;
   }
@@ -558,19 +558,27 @@ img {
   .contactbox {
     flex-direction: column;
   }
-
-  /* 🔥 Projects grid fix */
+  /* Projects section responsive without changing 3-column layout */
+@media (max-width: 900px) {
   .projbox {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets/small desktops */
-    gap: 20px; /* optional, reduce gap if needed */
-    margin: 0 20px; /* add some side spacing */
+    display: flex;           /* switch to horizontal flex */
+    flex-wrap: nowrap;       /* prevent wrapping */
+    overflow-x: auto;        /* allow horizontal scroll */
+    gap: 20px;               /* space between cards */
+    padding: 10px 20px;      /* some padding on sides */
+  }
+
+  .projbox > div {
+    flex: 0 0 300px;         /* each card keeps fixed width */
+  }
+
+  /* Optional: hide scroll bar in modern browsers */
+  .projbox::-webkit-scrollbar {
+    display: none;
+  }
+  .projbox {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none;     /* Firefox */
   }
 }
-
-@media (max-width: 600px) {
-  /* Mobile screens */
-  .projbox {
-    grid-template-columns: 1fr; /* stack all project boxes */
-    margin: 0 10px; /* smaller padding on sides */
-  }
 }
