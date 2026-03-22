@@ -8,7 +8,6 @@
 html,
 body {
   scroll-behavior: smooth;
-  /*scroll-snap-type: y mandatory;*/
   line-height: 1.6;
   font-size: 20px;
 }
@@ -222,7 +221,6 @@ p {
 .about {
   height: fit-content;
   background-color: #ffebcd;
-
 }
 .about h2 {
   text-align: center;
@@ -537,15 +535,15 @@ img {
   .education .edbox {
     display: flex;
     flex-direction: column;
-    max-height: 400px;            
-    overflow-y: auto;             
+    max-height: 400px;
+    overflow-y: auto;
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
   }
- .education .edbox .btn {
-    margin-top: auto;         
+  .education .edbox .btn {
+    margin-top: auto;
     width: 100%;
     max-width: 300px;
     padding: 12px 0;
@@ -554,13 +552,12 @@ img {
     flex-shrink: 0;
   }
 
-
   .skills .colbox {
     margin: 20px;
     padding: 10px;
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
     gap: 15px;
-    overflow-x: hidden;           
+    overflow-x: hidden;
   }
 
   .skills .colbox p {
@@ -573,7 +570,7 @@ img {
     flex-shrink: 0;
   }
   .content {
-    flex-direction: column;       
+    flex-direction: column;
   }
   .content img {
     width: 100%;
@@ -589,7 +586,7 @@ img {
   }
 
   .content2 ul {
-    display: block;              
+    display: block;
     padding: 10px 0;
     margin: 10px 0;
     list-style: none;
@@ -613,7 +610,7 @@ img {
   }
 
   .projbox > div {
-    flex: 0 0 300px;              
+    flex: 0 0 300px;
   }
   .projbox::-webkit-scrollbar {
     display: none;
