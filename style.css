@@ -546,10 +546,11 @@ img {
   }
 
   .education .edbox {
-    margin: 20px;
-    max-height: 400px;
-    overflow-y: auto;
-    padding: 20px;
+    margin: 20px !important;
+    max-height: 400px !important;
+    overflow-y: auto !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
   }
   .skills .colbox {
     margin: 20px;
