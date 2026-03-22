@@ -547,8 +547,8 @@ img {
 
   .education .edbox {
     margin: 20px !important;
-    max-height: none !important;
-    overflow-y: visible !important;
+    max-height: 400px !important;
+    overflow-y: auto !important;
     padding: 20px !important;
     box-sizing: border-box !important;
   }
