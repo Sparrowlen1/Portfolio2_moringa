@@ -517,53 +517,78 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* 🔥 MOBILE FIX WITHOUT CHANGING YOUR DESIGN */
 @media (max-width: 900px) {
-  .container{
+
+  /* Prevent horizontal cut */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Stack layout */
+  .container {
     flex-direction: column;
   }
+
+  /* Sidebar becomes top section */
   .left {
     position: relative;
     width: 100%;
     height: auto;
   }
 
+  /* Right section full width */
   .right {
     margin-left: 0;
     width: 100%;
   }
-}
-@media (max-width: 900px) {
-  .right > div {
-    padding: 30px 20px;
-  }
-}
-@media (max-width: 900px) {
-  .projbox {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 600px) {
+  /* 🔥 FIX BIG OFFSETS THAT BREAK MOBILE */
+  .home .box {
+    margin-left: 20px;     /* was 400px ❌ */
+    margin-bottom: 50px;   /* reduce spacing */
+    width: auto;
+  }
+
+  /* Fix content layout */
+  .content {
+    flex-direction: column;
+  }
+
+  .content img {
+    width: 100%;
+  }
+
+  /* Fix large margins */
+  .education .edbox {
+    margin: 20px;
+  }
+
+  .skills .colbox {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Fix grid overflow */
   .projbox {
     grid-template-columns: 1fr;
   }
-}
-@media (max-width: 900px) {
+
+  /* Contact section stack */
   .contactbox {
     flex-direction: column;
   }
-}
-@media (max-width: 600px) {
-  h2 {
-    font-size: 24px;
+
+  /* Reduce large paddings */
+  .projects,
+  .contact,
+  .education,
+  .skills {
+    padding: 30px 20px;
   }
 
-  p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 600px) {
+  /* OPTIONAL: show menu again */
   .links {
-    display: none; /*inahide menu*/
+    display: block;
   }
 }
