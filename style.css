@@ -517,33 +517,27 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* 🔥 MOBILE FIX WITHOUT CHANGING YOUR DESIGN */
-/* 🔥 FIX WITHOUT BREAKING YOUR DESIGN */
 @media (max-width: 900px) {
 
   html, body {
     overflow-x: hidden;
   }
 
-  /* Stack sections */
   .container {
     display: block;
   }
 
-  /* Left becomes normal (no longer fixed) */
   .left {
     position: relative;
     width: 100%;
     height: auto;
   }
 
-  /* Right takes full width */
   .right {
     margin-left: 0;
     width: 100%;
   }
 
-  /* 🔥 Remove desktop offsets that cause cutting */
   .home .box {
     margin-left: 20px;
     margin-bottom: 50px;
@@ -557,7 +551,6 @@ img {
     margin: 20px;
   }
 
-  /* Stack layouts */
   .content {
     flex-direction: column;
   }
