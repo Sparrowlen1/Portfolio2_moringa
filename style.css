@@ -519,67 +519,93 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* MOBILE RESPONSIVE STYLES */
 @media (max-width: 900px) {
+  /* Prevent horizontal scroll on page */
   html,
   body {
     overflow-x: hidden;
   }
 
+  /* Container stacked vertically */
   .container {
     display: block;
   }
 
+  /* Left section full width */
   .left {
     position: relative;
     width: 100%;
     height: auto;
   }
 
+  /* Right section full width */
   .right {
     margin-left: 0;
     width: 100%;
   }
 
+  /* Home box spacing */
   .home .box {
     margin-left: 20px;
     margin-bottom: 50px;
   }
+
+  /* Education box responsive */
   .education .edbox {
-    max-height: 400px !important;  
-    overflow-y: auto !important;    
-    margin: 20px !important;        
-    padding: 20px !important;       
+    margin: 20px !important;
+    width: auto !important;
+    max-height: none !important;       /* let it expand naturally */
+    overflow-y: visible !important;    /* no internal scroll needed */
+    padding: 20px !important;
     box-sizing: border-box !important;
   }
 
-  
-  .education .edbox::-webkit-scrollbar {
-    display: none;
-  }
-  .education .edbox {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
-  .education .edbox .btn{
-    width: 100%;          
-    max-width: 300px;     
-    padding: 12px 0;      
-    margin-left: 0;       
-    text-align: center;   
-    display: block;       
-  }
-  .skills .colbox {
-    margin: 20px;
+  /* Make the CV button fit */
+  .education .edbox .btn {
+    width: 100% !important;
+    max-width: 300px;
+    padding: 12px 0 !important;
+    margin-left: 0 !important;
+    display: block;
+    text-align: center;
   }
 
+  /* Skills section */
+  .skills .colbox {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    grid-template-columns: 1fr;       /* stack columns vertically */
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .skills .colbox p {
+    font-size: 18px;                  /* adjust font for mobile */
+    word-break: break-word;
+  }
+
+  .skills .colbox i {
+    font-size: 18px;                  /* reduce icon size */
+  }
+
+  /* About section: content stacked */
   .content {
     flex-direction: column;
   }
 
+  .content img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  /* Contact section stacked */
   .contactbox {
     flex-direction: column;
   }
+
+  /* Projects section: horizontal scroll */
   .projbox {
     display: flex;
     flex-wrap: nowrap;
@@ -589,6 +615,15 @@ img {
   }
 
   .projbox > div {
-    flex: 0 0 300px;
+    flex: 0 0 300px;                  /* fixed card width */
   }
 
+  /* Optional: hide scrollbars */
+  .projbox::-webkit-scrollbar {
+    display: none;
+  }
+  .projbox {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
