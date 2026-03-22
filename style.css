@@ -565,16 +565,4 @@ img {
   .contactbox {
     flex-direction: column;
   }
-  .content img{
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-  .content2{
-    grid-template-columns: 1fr;
-  }
-  .content2{
-    font-size: 16px;
-    word-break: break-word;
-  }
 }
