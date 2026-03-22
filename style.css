@@ -521,8 +521,6 @@ img {
 }
 /* MOBILE RESPONSIVE STYLES */
 /* MOBILE RESPONSIVE STYLES — fully updated */
-/* MOBILE RESPONSIVE STYLES — fully updated */
-/* MOBILE RESPONSIVE STYLES — fully updated with scrollable edbox */
 @media (max-width: 900px) {
   html,
   body {
@@ -553,51 +551,47 @@ img {
     margin-bottom: 50px;
   }
 
-  /* Education edbox: fixed height with scroll and button visible */
+  /* Education box responsive */
   .education .edbox {
-    display: flex;
-    flex-direction: column;
-    max-height: 400px;            /* limit height on mobile */
-    overflow-y: auto;             /* scroll for content */
-    margin: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
+    margin: 20px !important;
+    width: auto !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
   }
 
-  /* CV button pinned at bottom */
+  /* CV button fits box */
   .education .edbox .btn {
-    margin-top: auto;             /* push button to bottom */
-    width: 100%;
+    width: 100% !important;
     max-width: 300px;
-    padding: 12px 0;
+    padding: 12px 0 !important;
+    margin-left: 0 !important;
     display: block;
     text-align: center;
-    flex-shrink: 0;
   }
 
-  /* Skills colbox responsive */
+  /* Skills colbox */
   .skills .colbox {
-    margin: 20px;
-    padding: 10px;
-    grid-template-columns: 1fr;   /* stack vertically */
+    margin: 20px !important;
+    grid-template-columns: 1fr;      /* stack columns */
     gap: 15px;
-    overflow-x: hidden;           /* prevent horizontal overflow */
+    padding: 10px;
   }
 
   .skills .colbox p {
     font-size: 18px;
-    word-break: break-word;
+    word-break: break-word;           /* prevent text overflow */
   }
 
   .skills .colbox i {
     font-size: 18px;
-    flex-shrink: 0;
+    flex-shrink: 0;                   /* prevent icons from shrinking too much */
   }
 
   /* About section content2 */
   .content {
-    flex-direction: column;       /* stack image + text */
+    flex-direction: column;           /* stack image + text */
   }
 
   .content img {
@@ -607,24 +601,23 @@ img {
   }
 
   .content2 {
-    width: 100%;
-    padding: 10px;
+    width: 100% !important;
+    padding: 10px !important;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 
   .content2 ul {
-    display: block;               /* stack list items vertically */
-    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr;       /* single column to fit content */
+    gap: 10px;
+    padding: 10px;
     margin: 10px 0;
-    list-style: none;
     box-sizing: border-box;
   }
 
   .content2 ul li {
     font-size: 16px;
-    word-break: break-word;
-    margin-bottom: 10px;
+    word-break: break-word;           /* prevent overflow */
   }
 
   /* Contact section stacked */
@@ -632,7 +625,7 @@ img {
     flex-direction: column;
   }
 
-  /* Projects section horizontal scroll */
+  /* Projects section: horizontal scroll */
   .projbox {
     display: flex;
     flex-wrap: nowrap;
@@ -642,7 +635,7 @@ img {
   }
 
   .projbox > div {
-    flex: 0 0 300px;              /* fixed card width */
+    flex: 0 0 300px;                  /* fixed card width */
   }
 
   /* Optional: hide scrollbars */
