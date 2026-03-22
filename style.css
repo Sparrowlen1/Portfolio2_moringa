@@ -519,54 +519,40 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* MOBILE RESPONSIVE STYLES */
-/* MOBILE RESPONSIVE STYLES — fully updated */
-/* MOBILE RESPONSIVE STYLES — fully updated with scrollable edbox */
 @media (max-width: 900px) {
   html,
   body {
     overflow-x: hidden;
   }
-
-  /* Stack container vertically */
   .container {
     display: block;
   }
-
-  /* Left section full width */
   .left {
     position: relative;
     width: 100%;
     height: auto;
   }
 
-  /* Right section full width */
   .right {
     margin-left: 0;
     width: 100%;
   }
-
-  /* Home box spacing */
   .home .box {
     margin-left: 20px;
     margin-bottom: 50px;
   }
-
-  /* Education edbox: fixed height with scroll and button visible */
   .education .edbox {
     display: flex;
     flex-direction: column;
-    max-height: 400px;            /* limit height on mobile */
-    overflow-y: auto;             /* scroll for content */
+    max-height: 400px;            
+    overflow-y: auto;             
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
   }
-
-  /* CV button pinned at bottom */
-  .education .edbox .btn {
-    margin-top: auto;             /* push button to bottom */
+ .education .edbox .btn {
+    margin-top: auto;         
     width: 100%;
     max-width: 300px;
     padding: 12px 0;
@@ -575,13 +561,13 @@ img {
     flex-shrink: 0;
   }
 
-  /* Skills colbox responsive */
+
   .skills .colbox {
     margin: 20px;
     padding: 10px;
-    grid-template-columns: 1fr;   /* stack vertically */
+    grid-template-columns: 1fr;   
     gap: 15px;
-    overflow-x: hidden;           /* prevent horizontal overflow */
+    overflow-x: hidden;           
   }
 
   .skills .colbox p {
@@ -593,12 +579,9 @@ img {
     font-size: 18px;
     flex-shrink: 0;
   }
-
-  /* About section content2 */
   .content {
-    flex-direction: column;       /* stack image + text */
+    flex-direction: column;       
   }
-
   .content img {
     width: 100%;
     height: auto;
@@ -613,7 +596,7 @@ img {
   }
 
   .content2 ul {
-    display: block;               /* stack list items vertically */
+    display: block;              
     padding: 10px 0;
     margin: 10px 0;
     list-style: none;
@@ -625,13 +608,9 @@ img {
     word-break: break-word;
     margin-bottom: 10px;
   }
-
-  /* Contact section stacked */
   .contactbox {
     flex-direction: column;
   }
-
-  /* Projects section horizontal scroll */
   .projbox {
     display: flex;
     flex-wrap: nowrap;
@@ -641,10 +620,8 @@ img {
   }
 
   .projbox > div {
-    flex: 0 0 300px;              /* fixed card width */
+    flex: 0 0 300px;              
   }
-
-  /* Optional: hide scrollbars */
   .projbox::-webkit-scrollbar {
     display: none;
   }
