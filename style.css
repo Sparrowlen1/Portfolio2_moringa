@@ -522,6 +522,7 @@ img {
 /* MOBILE RESPONSIVE STYLES */
 /* MOBILE RESPONSIVE STYLES — fully updated */
 /* MOBILE RESPONSIVE STYLES — fully updated */
+/* MOBILE RESPONSIVE STYLES — fully updated with scrollable edbox */
 @media (max-width: 900px) {
   html,
   body {
@@ -552,32 +553,36 @@ img {
     margin-bottom: 50px;
   }
 
-  /* Education edbox — keep scroll behavior */
+  /* Education edbox: fixed height with scroll and button visible */
   .education .edbox {
-    max-height: 400px;        /* keep it scrollable on mobile */
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;            /* limit height on mobile */
+    overflow-y: auto;             /* scroll for content */
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
+    position: relative;
   }
 
-  /* CV button inside edbox */
+  /* CV button pinned at bottom */
   .education .edbox .btn {
+    margin-top: auto;             /* push button to bottom */
     width: 100%;
     max-width: 300px;
     padding: 12px 0;
-    margin-left: 0;
     display: block;
     text-align: center;
+    flex-shrink: 0;
   }
 
   /* Skills colbox responsive */
   .skills .colbox {
     margin: 20px;
     padding: 10px;
-    grid-template-columns: 1fr;      /* stack vertically */
+    grid-template-columns: 1fr;   /* stack vertically */
     gap: 15px;
-    overflow-x: hidden;              /* prevent horizontal overflow */
+    overflow-x: hidden;           /* prevent horizontal overflow */
   }
 
   .skills .colbox p {
@@ -587,12 +592,12 @@ img {
 
   .skills .colbox i {
     font-size: 18px;
-    flex-shrink: 0;                  /* keep icon visible */
+    flex-shrink: 0;
   }
 
   /* About section content2 */
   .content {
-    flex-direction: column;          /* stack image + text */
+    flex-direction: column;       /* stack image + text */
   }
 
   .content img {
@@ -605,12 +610,11 @@ img {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    overflow-x: hidden;              /* prevent horizontal overflow */
+    overflow-x: hidden;
   }
 
-  /* Make ul inside content2 responsive */
   .content2 ul {
-    display: block;                  /* stack list items vertically */
+    display: block;               /* stack list items vertically */
     padding: 10px 0;
     margin: 10px 0;
     list-style: none;
@@ -619,7 +623,7 @@ img {
 
   .content2 ul li {
     font-size: 16px;
-    word-break: break-word;           /* prevent overflow */
+    word-break: break-word;
     margin-bottom: 10px;
   }
 
@@ -638,7 +642,7 @@ img {
   }
 
   .projbox > div {
-    flex: 0 0 300px;                 /* fixed card width */
+    flex: 0 0 300px;              /* fixed card width */
   }
 
   /* Optional: hide scrollbars */
