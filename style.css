@@ -520,14 +520,14 @@ img {
   height: auto;
 }
 /* MOBILE RESPONSIVE STYLES */
+/* MOBILE RESPONSIVE STYLES — fully updated */
 @media (max-width: 900px) {
-  /* Prevent horizontal scroll on page */
   html,
   body {
     overflow-x: hidden;
   }
 
-  /* Container stacked vertically */
+  /* Stack container vertically */
   .container {
     display: block;
   }
@@ -555,13 +555,13 @@ img {
   .education .edbox {
     margin: 20px !important;
     width: auto !important;
-    max-height: none !important;       /* let it expand naturally */
-    overflow-y: visible !important;    /* no internal scroll needed */
+    max-height: none !important;
+    overflow-y: visible !important;
     padding: 20px !important;
     box-sizing: border-box !important;
   }
 
-  /* Make the CV button fit */
+  /* CV button fits box */
   .education .edbox .btn {
     width: 100% !important;
     max-width: 300px;
@@ -571,33 +571,53 @@ img {
     text-align: center;
   }
 
-  /* Skills section */
+  /* Skills colbox */
   .skills .colbox {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-    grid-template-columns: 1fr;       /* stack columns vertically */
+    margin: 20px !important;
+    grid-template-columns: 1fr;      /* stack columns */
     gap: 15px;
     padding: 10px;
   }
 
   .skills .colbox p {
-    font-size: 18px;                  /* adjust font for mobile */
-    word-break: break-word;
+    font-size: 18px;
+    word-break: break-word;           /* prevent text overflow */
   }
 
   .skills .colbox i {
-    font-size: 18px;                  /* reduce icon size */
+    font-size: 18px;
+    flex-shrink: 0;                   /* prevent icons from shrinking too much */
   }
 
-  /* About section: content stacked */
+  /* About section content2 */
   .content {
-    flex-direction: column;
+    flex-direction: column;           /* stack image + text */
   }
 
   .content img {
     width: 100%;
     height: auto;
     margin: 10px 0;
+  }
+
+  .content2 {
+    width: 100% !important;
+    padding: 10px !important;
+    box-sizing: border-box;
+  }
+
+  .content2 ul {
+    display: grid;
+    grid-template-columns: 1fr;       /* single column to fit content */
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .content2 ul li {
+    font-size: 16px;
+    word-break: break-word;           /* prevent overflow */
   }
 
   /* Contact section stacked */
