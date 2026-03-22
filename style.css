@@ -552,7 +552,8 @@ img {
     position: relative;
   }
  .education .edbox .btn {
-    margin-top: auto;         
+    margin-top: auto;
+    margin-left: 0px;         
     width: 100%;
     max-width: 300px;
     padding: 12px 0;
