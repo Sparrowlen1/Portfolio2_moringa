@@ -552,6 +552,14 @@ img {
     padding: 20px !important;
     box-sizing: border-box !important;
   }
+  .education .edbox .btn{
+    width: 100%;          /* make button take full width of the box */
+    max-width: 300px;     /* optional: limit max size */
+    padding: 12px 0;      /* reduce horizontal padding */
+    margin-left: 0;       /* remove big left margin */
+    text-align: center;   /* center the text inside button */
+    display: block;       
+  }
   .skills .colbox {
     margin: 20px;
   }
