@@ -544,18 +544,15 @@ img {
     margin-left: 20px;
     margin-bottom: 50px;
   }
-
-  /* MOBILE FIX: limit edbox height and make it scrollable */
-@media (max-width: 900px) {
   .education .edbox {
-    max-height: 400px !important;  /* cap the height */
-    overflow-y: auto !important;    /* scroll inside box if needed */
-    margin: 20px !important;        /* smaller margins */
-    padding: 20px !important;       /* smaller padding */
+    max-height: 400px !important;  
+    overflow-y: auto !important;    
+    margin: 20px !important;        
+    padding: 20px !important;       
     box-sizing: border-box !important;
   }
 
-  /* Optional: hide internal scrollbar for cleaner look */
+  
   .education .edbox::-webkit-scrollbar {
     display: none;
   }
@@ -565,10 +562,10 @@ img {
   }
 }
   .education .edbox .btn{
-    width: 100%;          /* make button take full width of the box */
-    max-width: 300px;     /* optional: limit max size */
-    padding: 12px 0;      /* reduce horizontal padding */
-    margin-left: 0;       /* remove big left margin */
+    width: 100%;          
+    max-width: 300px;     
+    padding: 12px 0;      
+    margin-left: 0;       
     text-align: center;   
     display: block;       
   }
@@ -594,4 +591,4 @@ img {
   .projbox > div {
     flex: 0 0 300px;
   }
-}
+
