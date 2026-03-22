@@ -547,6 +547,7 @@ img {
 
   .education .edbox {
     margin: 20px;
+    width: 100%;
     height: 100%;
   }
   .skills .colbox {
