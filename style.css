@@ -551,11 +551,4 @@ img {
     margin: 20px;
   }
 
-  .content {
-    flex-direction: column;
-  }
-
-  .contactbox {
-    flex-direction: column;
-  }
 }
