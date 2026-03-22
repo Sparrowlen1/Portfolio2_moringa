@@ -549,7 +549,7 @@ img {
     width: 100%;
     max-width: 300px;
     padding: 12px 0;
-    display: inline-block;
+    display: block;
     text-align: center;
     flex-shrink: 0;
   }
