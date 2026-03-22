@@ -558,7 +558,8 @@ img {
   .contactbox {
     flex-direction: column;
   }
-  /* Projects section responsive without changing 3-column layout */
+}
+/* Projects section responsive without changing 3-column layout */
 @media (max-width: 900px) {
   .projbox {
     display: flex;           /* switch to horizontal flex */
@@ -580,5 +581,4 @@ img {
     -ms-overflow-style: none;  /* IE 10+ */
     scrollbar-width: none;     /* Firefox */
   }
-}
 }
