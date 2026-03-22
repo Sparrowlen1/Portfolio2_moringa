@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
 }
 .left {
-  background-color: #16181b;
+  background-color: #020c1b;
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,6 @@ body {
   scrollbar-width: none;
   height: 100vh;
   box-sizing: border-box;
-  height: 100vh;
   width: 420px;
 }
 .logo {
@@ -36,7 +35,7 @@ body {
 }
 .logo h1,
 p {
-  color: whitesmoke;
+  color: #e6f1ff;
   margin: 0px 20px;
 }
 .btn1 {
@@ -52,12 +51,8 @@ p {
   font-weight: bold;
 }
 .pic {
-  border: 8px solid rgb(194, 192, 192);
-  border-radius: 50px;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+  border: 8px solid #1f2a44;
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   margin-left: 90px;
@@ -70,13 +65,13 @@ p {
   border-radius: 50%;
 }
 .left p {
-  color: white;
+  color: #e6f1ff;
   margin: 0px 50px;
   font-weight: bold;
   font-size: 40px;
 }
 .logos {
-  border: 2px solid white;
+  border: 2px solid #1f2a44;
   display: flex;
   width: 200px;
   height: 40px;
@@ -84,11 +79,9 @@ p {
   margin: 0px 100px;
 }
 .logos i {
-  color: white;
+  color: #e6f1ff;
   font-size: 21px;
-  transition:
-    color 0.3s,
-    transform 0.3s;
+  transition: color 0.3s, transform 0.3s;
   cursor: pointer;
   justify-content: space-between;
   padding-left: 20px;
@@ -96,7 +89,7 @@ p {
   padding-bottom: 15px;
 }
 .logos i:hover {
-  color: #0ff;
+  color: #d4af37;
   transform: scale(1.2);
 }
 .links .nav {
@@ -109,36 +102,33 @@ p {
   display: flex;
   gap: 10px;
   padding: 10px 15px;
-  color: white;
+  color: #e6f1ff;
   cursor: pointer;
-  transition:
-    color 0.3s,
-    color 0.3s;
+  transition: 0.3s;
 }
 .links .nav li a {
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: white;
+  color: #8892b0;
   font-weight: bold;
   padding: 8px 15px;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 .links .nav li i {
-  color: yellow;
+  color: #d4af37;
   font-size: 15px;
   transition: transform 0.3s;
 }
 .links .nav li:hover i {
-  color: #0ff;
+  color: #d4af37;
   transform: scale(1.2);
 }
 .links .nav li:hover {
-  color: #0ff;
+  color: #d4af37;
 }
-
 .top-btn {
   position: fixed;
   bottom: 30px;
@@ -151,7 +141,7 @@ p {
 }
 .right {
   margin-left: 420px;
-  width: calc(100% - 420px); /*takes up the remaining width that appeared*/
+  width: calc(100% - 420px);
 }
 .right > div {
   min-height: 100vh;
@@ -159,18 +149,17 @@ p {
   position: relative;
 }
 .home {
-  /*background-image: url('/images/homebg.jpg');*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 400px;
   display: flex;
-  justify-content: flex-start; /*aligns horizontalyy at start*/
-  align-items: flex-end; /*aligns vertically at the bottom*/
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .home .box {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(2, 12, 27, 0.9);
   padding: 30px 50px;
   border-radius: 20px;
   width: 300px;
@@ -187,17 +176,15 @@ p {
   z-index: -1;
 }
 .home h2 {
-  color: white;
+  color: #d4af37;
 }
 .right .typing {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #0ff;
+  border-right: 3px solid #d4af37;
   width: 0;
   height: 30px;
-  animation:
-    typing 4s steps(30, end) infinite,
-    blink 0.7s infinite;
+  animation: typing 4s steps(30, end) infinite, blink 0.7s infinite;
 }
 @keyframes typing {
   from {
@@ -212,20 +199,21 @@ p {
     border-color: transparent;
   }
 }
-.about p {
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-  font-weight: bold;
-}
 .about {
   height: fit-content;
-  background-color: #ffebcd;
+  background-color: #0a192f;
+  border-bottom: 2px solid goldenrod;
 }
 .about h2 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  color: #0ea5e9;
+  color: #d4af37;
+}
+.about p {
+  color: #ccd6f6;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
 }
 .content {
   display: flex;
@@ -240,6 +228,7 @@ p {
 .content h2 {
   margin: 20px;
   font-weight: bolder;
+  color: #e6f1ff;
 }
 .content2 ul {
   display: grid;
@@ -247,50 +236,50 @@ p {
   gap: 20px 20px;
   padding: 10px;
   list-style: none;
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin: 15px 20px 30px;
+  background-color: rgba(17, 34, 64, 0.8);
   border-radius: 10px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 15px rgba(181, 146, 6, 0.6);
 }
 .content2 ul li {
-  color: rgb(0, 0, 0);
+  color: #e6f1ff;
   font-size: 20px;
   font-weight: bold;
 }
 .content2 ul li a {
   text-decoration: none;
-  color: #0ff;
+  color: #d4af37;
 }
 .content2 ul li a:hover {
-  color: #e68900;
+  color: #c9a227;
 }
 .content2 ul li i {
-  color: rgb(249, 249, 28);
+  color: #d4af37;
   font-size: 15px;
 }
 .education {
-  background-color: #ffd39b;
+   background-color: #0a192f;;
   padding: 60px 40px;
+  border-bottom: 2px solid goldenrod;
 }
 .education h2 {
   text-align: center;
   font-size: 50px;
   font-family: "Courier New", Courier, monospace;
-  color: #0ea5e9;
+  color: #d4af37;
 }
 .education .edbox {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #0f1c2e;
   padding: 30px 50px;
   border-radius: 20px;
   max-width: 700px;
   margin: 30px 150px;
+  box-shadow: 0 8px 15px rgba(181, 146, 6, 0.6);
 }
 .edbox p {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  color: #ccd6f6;
 }
 .btn {
   background-color: #0ff;
@@ -309,14 +298,15 @@ p {
 }
 .skills {
   padding: 20px 40px;
-  background-color: #ffe4b5;
+  background: #112240;
+  border-bottom: 2px solid goldenrod;
 }
 .skills h2 {
   margin-left: 20px;
   text-align: center;
   font-size: 50px;
   font-family: "Courier New", Courier, monospace;
-  color: #0ea5e9;
+  color: #d4af37;
 }
 .skills p {
   margin-left: 30px;
@@ -324,50 +314,45 @@ p {
   margin-bottom: 20px;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+  color: #ccd6f6;
+  font-weight: bolder;
 }
 .skills .colbox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 20px;
+  margin: 0 200px 20px;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #112240;
   border-radius: 20px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 15px rgba(181, 146, 6, 0.6);
 }
 .skills .colbox p {
   padding: 0px;
   text-align: left;
 }
-.skills p {
-  color: #000;
-  font-weight: bolder;
-  font-size: 25px;
-}
 .colbox p {
   font-weight: bolder;
 }
 .colbox i {
-  color: yellow;
+  color: #d4af37;
 }
 .projects {
   padding: 60px;
-  background: #ffa07a;
-  color: #000000;
+  background: #112240;
+  color: #e6f1ff;
+  border-bottom: 2px solid goldenrod;
 }
 .projects h2 {
   font-size: 40px;
-  font-weight: 70px;
   text-align: center;
   margin-bottom: 10px;
   font-family: "Courier New", Courier, monospace;
-  color: #0ea5e9;
+  color: #d4af37;
   font-weight: bold;
 }
 .projects p {
   margin-bottom: 10px;
-  color: #000000;
+  color: #ccd6f6;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
@@ -380,12 +365,12 @@ p {
   gap: 25px;
 }
 .projbox > div {
-  background: #818386;
+  background: #0f1c2e;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
   transition: all 0.4s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 15px rgba(181, 146, 6, 0.6);
 }
 .projbox img {
   width: 100%;
@@ -401,39 +386,38 @@ p {
 .projbox a {
   display: inline-block;
   padding: 8px 18px;
-  background: #38bdf8;
-  color: #000;
+  background: transparent;
+  color: #d4af37;
   text-decoration: none;
   border-radius: 6px;
+  border: 1px solid #d4af37;
   transition: 0.3s;
 }
 .projbox > div:hover {
   transform: translateY(-10px) scale(1.03);
-  background: #334155;
+  background: #1f2a44;
 }
 .projbox a:hover {
-  background: #0ea5e9;
-  color: #fff;
+  background: #d4af37;
+  color: #020c1b;
+}
+.contact {
+  padding: 60px;
+  background: #0a192f;
 }
 .contact h2 {
   text-align: center;
   font-weight: bold;
   font-size: 40px;
-  color: #000;
   font-family: "Courier New", Courier, monospace;
-  color: #0ea5e9;
+  color: #d4af37;
 }
 .contact p {
   text-align: center;
   font-weight: bold;
-  color: #000;
+  color: #ccd6f6;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
-}
-.contact {
-  padding: 60px;
-  background: #ffdab9;
-  color: #fff;
 }
 .contactbox {
   display: flex;
@@ -450,11 +434,11 @@ p {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
-  color: #000;
+  color: #e6f1ff;
 }
 .location i {
   margin-right: 10px;
-  color: yellow;
+  color: #d4af37;
 }
 .location iframe {
   width: 100%;
@@ -478,6 +462,8 @@ p {
   outline: none;
   font-size: 20px;
   font-weight: bold;
+  background: #173661;
+  color: #e6f1ff;
 }
 .form button {
   padding: 12px;
@@ -495,16 +481,15 @@ p {
 .footer {
   text-align: center;
   padding: 20px;
-  background: #2f2d2d;
-  color: #aaa;
+  background: #020c1b;
+  color: #8892b0;
 }
-
 .footer a {
-  color: #0ff;
+  color: #d4af37;
   text-decoration: none;
 }
 .footer a:hover {
-  color: #e68900;
+  color: #c9a227;
 }
 img {
   max-width: 100%;
@@ -523,7 +508,6 @@ img {
     width: 100%;
     height: auto;
   }
-
   .right {
     margin-left: 0;
     width: 100%;
@@ -551,7 +535,6 @@ img {
     text-align: center;
     flex-shrink: 0;
   }
-
   .skills .colbox {
     margin: 20px;
     padding: 10px;
@@ -559,12 +542,10 @@ img {
     gap: 15px;
     overflow-x: hidden;
   }
-
   .skills .colbox p {
     font-size: 18px;
     word-break: break-word;
   }
-
   .skills .colbox i {
     font-size: 18px;
     flex-shrink: 0;
@@ -577,14 +558,12 @@ img {
     height: auto;
     margin: 10px 0;
   }
-
   .content2 {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     overflow-x: hidden;
   }
-
   .content2 ul {
     display: block;
     padding: 10px 0;
@@ -592,7 +571,6 @@ img {
     list-style: none;
     box-sizing: border-box;
   }
-
   .content2 ul li {
     font-size: 16px;
     word-break: break-word;
@@ -608,7 +586,6 @@ img {
     gap: 20px;
     padding: 10px 20px;
   }
-
   .projbox > div {
     flex: 0 0 300px;
   }
