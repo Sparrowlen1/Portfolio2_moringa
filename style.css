@@ -104,7 +104,7 @@ p {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 20px 0px;
+  margin: 0px;
 }
 .links .nav li {
   display: flex;
@@ -218,6 +218,9 @@ p {
 }
 .about p {
   color: black;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
 }
 .education {
   background-color: rgb(84, 53, 8);
@@ -227,7 +230,9 @@ p {
   background-color: antiquewhite;
 }
 .about h2 {
-  margin-left: 20px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  color: #0ea5e9;
 }
 .content {
   display: flex;
@@ -252,7 +257,7 @@ p {
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
@@ -280,7 +285,8 @@ p {
 .education h2 {
   text-align: center;
   font-size: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:'Courier New', Courier, monospace;
+  color: #0ea5e9;
 }
 .education .edbox {
   background-color: rgba(0, 0, 0, 0.6);
@@ -289,6 +295,10 @@ p {
   max-width: 700px;
   margin: 30px 150px;
 }
+.edbox p{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+}
 .btn {
   background-color: #0ff;
   text-decoration: none;
@@ -296,7 +306,7 @@ p {
   border-radius: 20px;
   color: #000;
   font-weight: bolder;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 200px;
 }
 .btn:hover {
@@ -307,17 +317,21 @@ p {
 .skills{
   padding: 20px 40px;
   background-color: antiquewhite;
+  border-bottom: 2px solid black;
 }
 .skills h2 {
   margin-left: 20px;
   text-align: center;
   font-size: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:'Courier New', Courier, monospace;
+  color: #0ea5e9;
 }
 .skills p{
   margin-left: 30px;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
 }
 .skills .colbox{
   display: grid;
@@ -325,14 +339,19 @@ p {
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
+.skills .colbox p{
+  padding: 0px;
+  text-align: left;
+}
 .skills p{
   color: #000;
   font-weight: bolder;
+  font-size: 25px;
 }
 .colbox p{
   font-weight: bolder;
@@ -342,19 +361,26 @@ p {
 }
 .projects{
   padding: 60px;
-  background: bisque;
+  background: rgb(112, 99, 99);
   color: #000000;
+  border-bottom: 2px solid black;
 }
 .projects h2{
   font-size: 40px;
   font-weight: 70px;
   text-align: center;
   margin-bottom: 10px;
+  font-family:'Courier New', Courier, monospace;
+  color: #0ea5e9;
+  font-weight: bold;
 }
 .projects p{
   margin-bottom: 10px;
   color: #000000;
   text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
 }
 .projbox{
   margin-top: 30px;
@@ -403,15 +429,19 @@ p {
   font-weight: bold;
   font-size: 40px;
   color: #000;
+  font-family:'Courier New', Courier, monospace;
+  color: #0ea5e9;
 }
 .contact p{
   text-align: center;
   font-weight: bold;
   color: #000;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 25px;
 }
 .contact{
   padding: 60px;
-  background: antiquewhite;
+  background: rgb(238, 207, 167);
   color: #fff;
 }
 .contactbox{
