@@ -548,7 +548,10 @@ img {
   .education .edbox {
     margin: 20px;
   }
-
+.education .edbox p{
+  text-align: center;
+  margin: 10px;
+}
   .skills .colbox {
     margin: 20px;
   }
