@@ -572,13 +572,4 @@ img {
   .projbox > div {
     flex: 0 0 300px;         /* each card keeps fixed width */
   }
-
-  /* Optional: hide scroll bar in modern browsers */
-  .projbox::-webkit-scrollbar {
-    display: none;
-  }
-  .projbox {
-    -ms-overflow-style: none;  /* IE 10+ */
-    scrollbar-width: none;     /* Firefox */
-  }
 }
