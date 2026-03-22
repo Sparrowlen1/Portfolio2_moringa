@@ -523,7 +523,6 @@ img {
 /* MOBILE RESPONSIVE STYLES — fully updated */
 /* MOBILE RESPONSIVE STYLES — fully updated */
 /* MOBILE RESPONSIVE STYLES — fully updated with scrollable edbox */
-/* MOBILE RESPONSIVE STYLES — updated with scroll indicators */
 @media (max-width: 900px) {
   html,
   body {
@@ -554,38 +553,21 @@ img {
     margin-bottom: 50px;
   }
 
-  /* Education edbox: scrollable with visible CV button */
+  /* Education edbox: fixed height with scroll and button visible */
   .education .edbox {
     display: flex;
     flex-direction: column;
-    max-height: 400px;           /* limit height on mobile */
-    overflow-y: auto;
+    max-height: 400px;            /* limit height on mobile */
+    overflow-y: auto;             /* scroll for content */
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
   }
 
-  /* Add scroll-down indicator for edbox */
-  .education .edbox::after {
-    content: "\2193"; /* down arrow */
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 24px;
-    color: #0ff;
-    animation: bounce 1s infinite alternate;
-    pointer-events: none;
-  }
-
-  @keyframes bounce {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(8px); }
-  }
-
   /* CV button pinned at bottom */
   .education .edbox .btn {
-    margin-top: auto;            /* push button to bottom */
+    margin-top: auto;             /* push button to bottom */
     width: 100%;
     max-width: 300px;
     padding: 12px 0;
@@ -598,9 +580,9 @@ img {
   .skills .colbox {
     margin: 20px;
     padding: 10px;
-    grid-template-columns: 1fr;  /* stack vertically */
+    grid-template-columns: 1fr;   /* stack vertically */
     gap: 15px;
-    overflow-x: hidden;
+    overflow-x: hidden;           /* prevent horizontal overflow */
   }
 
   .skills .colbox p {
@@ -615,7 +597,7 @@ img {
 
   /* About section content2 */
   .content {
-    flex-direction: column;      /* stack image + text */
+    flex-direction: column;       /* stack image + text */
   }
 
   .content img {
@@ -632,7 +614,7 @@ img {
   }
 
   .content2 ul {
-    display: block;              /* stack list items vertically */
+    display: block;               /* stack list items vertically */
     padding: 10px 0;
     margin: 10px 0;
     list-style: none;
@@ -657,32 +639,13 @@ img {
     overflow-x: auto;
     gap: 20px;
     padding: 10px 20px;
-    position: relative;
   }
 
   .projbox > div {
-    flex: 0 0 300px;             /* fixed card width */
+    flex: 0 0 300px;              /* fixed card width */
   }
 
-  /* Add horizontal scroll indicator for projbox */
-  .projbox::after {
-    content: "\2192"; /* right arrow */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    font-size: 24px;
-    color: #0ff;
-    transform: translateY(-50%);
-    animation: slide 1s infinite alternate;
-    pointer-events: none;
-  }
-
-  @keyframes slide {
-    0% { transform: translateY(-50%) translateX(0); }
-    100% { transform: translateY(-50%) translateX(8px); }
-  }
-
-  /* Hide native scrollbars */
+  /* Optional: hide scrollbars */
   .projbox::-webkit-scrollbar {
     display: none;
   }
